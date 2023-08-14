@@ -2,6 +2,11 @@
 // JASON OBJECT
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.data = void 0;
+const data1 = {
+    "name": "Vipin",
+    "age": 21,
+    "gender": "male",
+};
 const data = {
     "name": "Muhamad Kamran",
     "age": 30,

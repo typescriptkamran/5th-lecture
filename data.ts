@@ -1,7 +1,16 @@
 // JASON OBJECT
 
+const data1 = {
+  "name": "Vipin",
 
-const data = {
+  "age": 21,
+ 
+  "gender": "male",
+}
+
+
+const data = 
+{
     "name": "Muhamad Kamran",
     "age": 30,
     "isStudent": true,
