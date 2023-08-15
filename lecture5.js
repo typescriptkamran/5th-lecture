@@ -14,33 +14,39 @@ let message2;
 // message2 = "2" // assignment error
 let Rolenumber;
 Rolenumber = 1;
-// let and const
-const num1 = 1;
-// num1 = 5 / can not assing a new value to const
-const Myname = `Kamran`;
-// Myname = "Ali" // can not assing new value as it is const.
-let num2;
-num2 = 1;
-num2 = 5;
-console.log(num2);
-//use const where variable values do not change
-const a = 5;
-const b = 33;
-const c = "best";
-//I suggest use let instead of var everywhere, 
-//becuase let has blocked scope
-if (a === 5) {
-    let z = 4;
-    const y = 6;
-    console.log(z);
-    //use z
+// strong_typing
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+let message3;
+message3 = "2";
+let Rolenumber2;
+Rolenumber2 = 1;
+let isStudent;
+isStudent = true;
+// var - const - let
+// Varible in Globle Scope & Local Scope
+// function
+let a = 12; // (globle Scope)
+function example() {
+    if (a == 12) {
+        var x = 10; // (used in if statement as lcale scope)
+        console.log(x);
+        console.log(a); //  var is global-scoped, it can be use in local scope in if statement
+    }
+    // console.log(x); // Outputs 10, var is not function-scoped
+    console.log(a); //  var is global-scoped, it can be use in function scope
 }
-else {
-    let z = "string";
-    console.log(z);
-    //use z
-}
-// console.log(z)
-//  as veriable definde with let (z) was defined in local scope it will not work in globle scope. 
-// console.log(y)
-//  as const y was defined in local scope it will not work in globle scope.
+example();
+//   console.log(x); // Outputs 10, var is not globally scoped
+// var, let, and const
+var personName = "Muhamma Kamran";
+personName = "Ali Phull";
+console.log(personName);
+// let
+let person_Name = "Muhamma Kamran";
+person_Name = "Ali Phull";
+console.log(person_Name);
+// const
+const authorName = "Muhamma Kamran";
+// authorName = "Ali Phull"
+console.log(authorName);
+// modules

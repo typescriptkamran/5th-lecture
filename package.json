@@ -1,5 +1,6 @@
 {
   "name": "5th-lecture",
+  "type": "module",
   "version": "1.0.0",
   "description": "This project is about lecture 5",
   "main": "lecture5.js",

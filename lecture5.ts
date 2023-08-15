@@ -1,5 +1,6 @@
 // JASON OBJECT
 
+import { log } from "console";
 import {data} from "./data"
 
 
@@ -23,40 +24,61 @@ let message2: number
 let Rolenumber: number
 Rolenumber  = 1 
 
-// let and const
+// strong_typing
 
-const num1: number = 1
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
 
-// num1 = 5 / can not assing a new value to const
-const Myname: string = `Kamran`
-// Myname = "Ali" // can not assing new value as it is const.
+let message3: string
+message3 = "2"
 
-let num2: number
+let Rolenumber2: number
+Rolenumber2 = 1
+let isStudent: boolean
+isStudent = true
+// var - const - let
 
-num2 = 1
-num2 = 5
+// Varible in Globle Scope & Local Scope
 
-console.log(num2)
+// function
 
-//use const where variable values do not change
-const a = 5;
-const b : number = 33;
-const c ="best";
+let a: number = 12 // (globle Scope)
 
-//I suggest use let instead of var everywhere, 
-//becuase let has blocked scope
-if (a === 5) {
-	let z = 4;
-    const y = 6
-    console.log(z);
-	//use z
-}
-else {
-	let z = "string";
-	console.log(z);
-    //use z
-}
-// console.log(z)
-//  as veriable definde with let (z) was defined in local scope it will not work in globle scope. 
-// console.log(y)
-//  as const y was defined in local scope it will not work in globle scope.
+function example() {
+	if (a == 12) {
+	  var x = 10; // (used in if statement as lcale scope)
+	  console.log(x);
+	  console.log(a); //  var is global-scoped, it can be use in local scope in if statement
+	}
+	// console.log(x); // Outputs 10, var is not function-scoped
+	console.log(a); //  var is global-scoped, it can be use in function scope
+  }
+  example();
+  
+//   console.log(x); // Outputs 10, var is not globally scoped
+  
+// var, let, and const
+
+var personName: string = "Muhamma Kamran"
+
+personName = "Ali Phull"
+
+console.log(personName);
+
+// let
+
+let person_Name: string = "Muhamma Kamran"
+
+person_Name = "Ali Phull"
+
+console.log(person_Name);
+
+// const
+
+const authorName: string = "Muhamma Kamran"
+
+// authorName = "Ali Phull"
+
+console.log(authorName);
+
+// modules
+// https://www.typescriptlang.org/docs/handbook/esm-node.html
