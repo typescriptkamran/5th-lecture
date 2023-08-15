@@ -76,7 +76,7 @@ console.log(person_Name);
 
 const authorName: string = "Muhamma Kamran"
 
-// authorName = "Ali Phull"
+// authorName = "Ali Phull" // it is giving an error message as we can not assing other value to const.
 
 console.log(authorName);
 
