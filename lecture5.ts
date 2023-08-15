@@ -8,10 +8,8 @@ console.log (`My Name is ${data.name}, my age is ${data.age} my hobies are ${dat
 
 // syntax error
 
-
-
 let message = "hello world  from Kamran"
-let message1 = "Hello World";//syntax error
+// lett message1 = "Hello World";//syntax error
 
 // typping error message
 // consolle.log();
